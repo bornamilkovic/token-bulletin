@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "number": 1,
+    "year": 2026,
+    "week": 44,
+    "date": "2026-10-31",
+    "pdf": "papers/2026/tb-2026-44.pdf",
+    "headlines": [
+      "Anthropic files to go public on Nasdaq as ANT",
+      "Fake Claude Code extension hits the Cursor Marketplace",
+      "A Fields medallist stops grading homework"
+    ]
+  }
+]
