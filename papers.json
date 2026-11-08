@@ -10,5 +10,17 @@
       "Fake Claude Code extension hits the Cursor Marketplace",
       "A Fields medallist stops grading homework"
     ]
+  },
+  {
+    "number": 2,
+    "year": 2026,
+    "week": 45,
+    "date": "2026-11-07",
+    "pdf": "papers/2026/tb-2026-45.pdf",
+    "headlines": [
+      "AI chip stocks crash as the US midterms spook investors",
+      "ChatGPT Lockdown Mode bypass lets chats leak silently",
+      "Dutch cabinet signs off on an AI vision for everyone"
+    ]
   }
 ]
