@@ -22,5 +22,17 @@
       "ChatGPT Lockdown Mode bypass lets chats leak silently",
       "Dutch cabinet signs off on an AI vision for everyone"
     ]
+  },
+  {
+    "number": 3,
+    "year": 2026,
+    "week": 46,
+    "date": "2026-11-14",
+    "pdf": "papers/2026/tb-2026-46.pdf",
+    "headlines": [
+      "Anthropic sets its IPO price at up to $78 a share",
+      "GitHub attack hunts AI tool tokens in 61,764 repos",
+      "Databricks puts $500 million into its Amsterdam hub"
+    ]
   }
 ]
