@@ -29,6 +29,10 @@ papers/
 
 Files are named `tb-<year>-<week>.pdf`, using the ISO week number of the Saturday the issue comes out.
 
+## Publishing an issue
+
+Upload the PDF and a matching `tb-<year>-<week>.json` entry to the [`inbox`](inbox) folder on `main`. A GitHub Action checks them, files the PDF, updates `papers.json` and commits. See [`inbox/README.md`](inbox/README.md) for the format.
+
 ## How it's made
 
 **AI-generated:** every issue is written by Claude (Anthropic) from public sources, which are listed at the foot of each page. Only facts found in those sources make it in. It can still contain mistakes, so check the sources before relying on anything.

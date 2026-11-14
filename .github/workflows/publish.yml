@@ -1,0 +1,39 @@
+name: Publish new issue
+
+# Runs when files land in inbox/ on main (e.g. uploaded on github.com).
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run at a time, so two uploads can't both claim the same issue number.
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Publish complete issues from inbox/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 -I scripts/publish_inbox.py --commit
+
+      - name: Push
+        run: |
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push origin HEAD:main
+          else
+            echo "Nothing new to push."
+          fi
